@@ -1,0 +1,18 @@
+<button class="btn btn-secondary">AddOn</button>
+
+<div class="items">
+    <div class="card">
+        <img src="../../../assets/images/baby.jpg" alt="" />
+        <h6>Title</h6>
+        <h6>Price: </h6>
+    </div>
+
+    <div class="formData">
+        <form #addOnForm="ngForm" (submit)="createAddOn()" >
+            <input type="text" placeholder="Enter the Add ons name"  />
+            <input type="text" placeholder="Enter the price"  />
+            <input type="text" placeholder="Enter the image Url"  />
+            <button type="submit">Add</button>
+        </form>
+    </div>
+</div>

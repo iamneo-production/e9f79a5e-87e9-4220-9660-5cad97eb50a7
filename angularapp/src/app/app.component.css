@@ -1,0 +1,19 @@
+.navbar{
+    height: 70px;
+    background-color: rgb(77, 77, 141);
+    min-height: max-content;
+    color: aliceblue;
+    cursor: pointer;
+}
+.navbar nav {
+    display: flex;  
+  
+}
+.navbar li {
+    list-style: none;
+    margin-right: 40px;
+}
+.navbar nav li a, li a{
+    text-decoration: none;
+    color: aliceblue;
+}

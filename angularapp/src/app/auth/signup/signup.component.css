@@ -1,0 +1,28 @@
+form{
+    display: block;
+    text-align: center;
+    padding: 20px;
+    margin: 40px;
+}
+.box {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    width: 500px;
+    border: 1px solid black;
+}
+
+input{
+    padding: 15px;
+    margin: 10px ;
+    border: none;
+    border-bottom:1px solid gray; 
+    width: 400px;
+    outline: none;
+    background: transparent;
+}
+.btn{
+    margin: 20px;
+}

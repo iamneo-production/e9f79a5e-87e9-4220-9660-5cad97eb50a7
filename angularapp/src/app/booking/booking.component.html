@@ -1,0 +1,64 @@
+<!-- Body -->
+<div class="container">
+    <form #bookingForm = "ngForm">
+        <!-- first page -->
+        <div *ngIf="page1">
+            <div class="row">
+                <div class="col-6 box">
+                    <input type="text" placeholder="Name : SS birthday event"  />
+                    <input type="text" placeholder="Enter applicant name"  />
+                    <input type="text" placeholder="Enter applicant address"  />
+                    <input type="tel number" placeholder="Enter applicant mobile no."  />
+                    <input type="email" placeholder="Enter applicant email ID"  />
+                </div>
+                <div class="col-6 box" >
+                    <input type="" placeholder="Address: Coimbatore"  />
+                    <!-- <input type="date" placeholder="Enter date of the event" /> -->
+                    <input placeholder="Enter date of the event" class="textbox-n" type="text" onfocus="(this.type='date')" id="date" >
+                    <!-- <input type="time" placeholder="Enter the time of the event" /> -->
+                    <input placeholder="Enter the time of the event" class="textbox-n" type="text" onfocus="(this.type='time')" id="time"  >
+                    <input type="number" placeholder="Enter the number of people"  />
+                    <button class="btn btn-secondary" type="button" (click)="setPage2()">Next page</button>
+                </div>
+                <div class="pages">
+                    <button class="page" type="button" (click)="setPage1()">1</button>
+                    <button class="page" type="button"  (click)="setPage2()" >2</button>
+                </div>
+            </div>
+        </div>
+        <!-- /First page -->
+        <!-- Second page  -->
+
+
+        <div class="box" *ngIf="page2">
+            <div class="row">
+                <div class="col-6">
+                    Food Types
+                    <select class="selection"  >
+                        <option value>wrsfvc</option>
+                        <option value>rewq</option>
+                        <option value>rev</option>
+                    </select>
+                    <input type="number" placeholder="Enter quantity of Veg items" min="0"   />
+                    <input type="number" placeholder="Enter quantity of Non veg items" min="0"  />
+                </div>
+                <div class="col-6">
+                    Select Add ons
+                    <select class="selection" name="category[]" multiple="multiple">
+                        <option><input type="checkbox" />fhvgbjh</option>
+                        <option><input type="checkbox" />fhvgbjh</option>
+                        <option><input type="checkbox" />fhvgbjh</option>
+                    </select>
+                    <button class="btn btn-secondary" type="submit">Book Event</button>
+                </div>
+            </div>
+            <div class="pages">
+                <button class="page" type="button" (click)="setPage1()" >1</button>
+                <button class="page" type="button" (click)="setPage2()" >2</button>
+            </div>
+
+        </div>
+        <!-- /Second page -->
+    </form>
+</div>
+<!-- /Body -->

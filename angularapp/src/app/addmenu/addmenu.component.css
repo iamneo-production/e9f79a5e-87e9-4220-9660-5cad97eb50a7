@@ -1,0 +1,18 @@
+.btn{
+    margin: 50px;
+}
+.headers{
+    display: flex;
+    border: 1px solid gray;
+    margin: auto;
+    background-color: aliceblue;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+.headers li{
+    margin-right: 150px;
+    list-style: none;
+    font-size: large;
+    font-weight: 500;
+}

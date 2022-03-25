@@ -1,0 +1,20 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+}
+.container
+.box input, .selection{
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    background: #fff;
+    text-align: center; 
+    height: 60px;
+}
+.btn{
+    position: absolute;
+    right: 70px;
+    bottom: 100px;
+}
