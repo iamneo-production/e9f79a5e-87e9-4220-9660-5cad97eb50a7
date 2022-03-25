@@ -1,0 +1,9 @@
+<form #loginForm="ngForm" (ngSubmit) = "loginUser()">
+    <h4>Login Form</h4>
+    <div class="box">
+        <input type="email"  placeholder="Enter User Email" name='email' [(ngModel)]="user.email" required/>
+        <input type="password"  placeholder="Create Password" name='password'  [(ngModel)]="user.password" required/>
+        <button class="btn btn-primary" type="submit">Login</button>
+        <p>New User/Admin? <a routerLink="/user/signup">Signup</a></p>
+    </div>
+</form>

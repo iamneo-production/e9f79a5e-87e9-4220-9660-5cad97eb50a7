@@ -1,0 +1,18 @@
+<form #signupForm="ngForm" (ngSubmit)="signupUser()" >
+    <h4>Register Form</h4>
+    <div class="box container-fluid">
+        <select class="btn dropdown btn-secondary" name="role" [(ngModel)]="user.userRole">
+            <option value="user" (change)="changeUrltoUser()" routerLink="/user/signup">user</option>
+            <option value="admin" (change)="changeUrltoAdmin()" routerLink="/admin/signup">admin</option>
+        </select>
+        <input type="email" placeholder="Enter User Email" id="email" name='email' [(ngModel)] = "user.email" />
+        <input type="text" placeholder="Enter User Name" id="userName" name='userName' [(ngModel)] ="user.name" />
+        <input type="tel" placeholder="Enter Mobile Number" id="mobileNumber" name='mobileNumber' [(ngModel)] ="user.mobileNumber" />
+        <input type="password" placeholder="Create Password" id="password" name='password' [(ngModel)] ="user.password" />
+        <input type="password" placeholder="Confirm Password" id="confirmPassword" name='confirmPassword' [(ngModel)] = "user.confirmPassword" />
+        <button class="btn btn-primary">Register</button>
+        <p>Already a User? <a routerLink="/user/login">Login</a></p>
+    </div>
+    
+    <!-- {{signupForm.value | json}} -->
+    </form>

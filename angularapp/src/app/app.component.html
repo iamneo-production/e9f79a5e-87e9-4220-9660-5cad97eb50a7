@@ -1,0 +1,27 @@
+
+<!-- Navbar -->
+<div class="navbar" *ngIf = 'isUserLoggedIn()'>
+  <div class="container-fluid">
+      <h5 routerLink="/user/getAllThemes" >Birthday Event</h5>
+      <nav>
+          <li><a routerLink="/user/bookTheme">Book Event</a> </li>
+          <li><a routerLink="/user/getBookedTheme">View Booked event</a> </li>
+      </nav>
+      <li><a routerLink="/user/login" (click)="logout()" >Logout</a></li>
+  </div>
+</div>
+<!-- /Navbar -->
+
+<div class="navbar" *ngIf = 'isAdminLoggedIn()'>
+  <div class="container-fluid">
+      <h5 routerLink="/user/getAllThemes" >Birthday Event</h5>
+      <nav>
+          <li><a routerLink="/admin/addTheme">Add Event</a> </li>
+          <li><a routerLink="/admin/addMenu">Add Menu</a> </li>
+          <li><a routerLink="/admin/addOn">Add Addon</a> </li>
+      </nav>
+      <li><a routerLink="/user/login" (click)="logout()" >Logout</a></li>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
