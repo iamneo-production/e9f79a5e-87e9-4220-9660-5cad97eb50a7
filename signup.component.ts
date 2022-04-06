@@ -1,0 +1,26 @@
+import { Component, OnInit } from '@angular/core';
+import {FormGroup,FormBuilder} from '@angular/forms'
+@Component({
+  selector: 'app-signup',
+  templateUrl: './signup.component.html',
+  styleUrls: ['./signup.component.css']
+})
+export class SignupComponent implements OnInit {
+
+  public signupForm !: FormGroup;
+  constructor(private formBuilder : FormBuilder) { }
+
+  ngOnInit(): void {
+    this.signupForm = this.formBuilder.group({
+      admin: [''],
+      email: [''],
+      username: [''],
+      mobileNumber: [''],
+      password: [''],
+      confirmPassword: ['']
+    })
+  }
+  signUp(){
+
+  }
+}

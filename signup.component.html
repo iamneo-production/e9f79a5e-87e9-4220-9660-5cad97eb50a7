@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="signup.component.css">
+<div class="Register"><input type="text" value="Register">
+</div>
+<div class="left">
+    <form method="post">
+        <form [formGroup]="signupForm" (ngSubmit)="signUp()">
+        <div id="admin">
+            <select required>
+                <option value="" disabled selected hidden>Enter admin/user  </option>
+                <option value="admin">admin</option>
+                <option value="user">user</option>
+            </select>
+        </div>
+        <br>
+        <div id="email">
+            <input type="text" formControlName="email" required placeholder="Enter email">
+        </div>
+        <br>
+        <div id="username">
+            <input type="text" formControlName="username" required placeholder="Enter Username">
+        </div>
+        <br>
+        <div id="mobileNumber">
+            <input type="text" formControlName="mobileNumber" required placeholder="Enter Mobilenumber">
+        </div>
+        <br>
+        <div id="password">
+            <input type="text" formControlName="password" required placeholder="Enter Password">
+        </div>
+        <br>
+        <div id="confirmPassword">
+            <input type="text" formControlName="confirmPassword" required placeholder="Confirm Password">
+        </div>
+        <br>
+        <div id="submitButton">
+            <input type="submit" value="Submit">
+        </div> 
+        
+        <div id="signinLink"> 
+            <br>Already a user? <a href="http://localhost:8080/login.component.html">Login</a>
+        </div>
+        </form>
+    </form>
+</div>
